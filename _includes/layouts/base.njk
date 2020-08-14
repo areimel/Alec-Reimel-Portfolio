@@ -8,6 +8,13 @@
       <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
       <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
 
+    <!-- SOCIAL METAS -->
+      <meta property="og:type" content="website">
+      <meta property="og:title" content="Alec Reimel Portfolio">
+      <meta property="og:url" content="https://alecreimel.com/">
+      <meta property="og:site_name" content="Alec Reimel Portfolio">
+      <meta property="og:locale" content="en">
+
 
 
     <!-- ANALYTICS -->
@@ -43,26 +50,19 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     
-  <div class="noise"></div>
-  
-  <div class="overlay"></div>
+    <div class="noise"></div>
+    
+    <div class="overlay"></div>
 
 
-  <div class="terminal"> <!-- TERMINAL OPENING TAG -->
+    <div class="terminal"> <!-- TERMINAL OPENING TAG -->
 
-    <div class="heading">
-      <h1>Access: <span class="highlight">Granted</span></h1>
-      <h1>Subject: <span class="highlight">Alec Reimel</span></h1>
-      <h1>CLass: <span class="highlight">Frontend Web Developer</span></h1>
-      <h1>Mission: <span class="highlight">Classified</span></h1>
+      <div class="content_wrapper">
+          {{ content | safe }}
+      </div>
+
+
     </div>
-
-    <div class="content_wrapper">
-        {{ content | safe }}
-    </div>
-
-
-  </div>
     
 
     <!-- Current page: {{ page.url | url }} -->

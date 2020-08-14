@@ -1,15 +1,15 @@
 {
-  "title": "Dungeon Master Audio",
-  "url": "https://dungeonmasteraudio.com/",
-  "description": "Ancient wizards crafting powerful artifacts beneath the alien sky.",
+  "title": "Alec Reimel | Portfolio",
+  "url": "https://alecreimel.com/",
+  "description": "Frontend Web Developer",
   "feed": {
-    "subtitle": "Ancient wizards crafting powerful artifacts beneath the alien sky.",
+    "subtitle": "Frontend Web Developer",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://dungeonmasteraudio.com/"
+    "id": "https://alecreimel.com/"
   },
   "author": {
     "name": "Alec Reimel",
-    "email": "dungeonmasteraudio@gmail.com"
+    "email": "alecreimel1@gmail.com"
   }
 }
