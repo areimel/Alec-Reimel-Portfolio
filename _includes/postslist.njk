@@ -1,0 +1,26 @@
+<ul class="--dma_product_grid">
+
+{% for post in postslist | reverse %}
+ 
+ <li class="product_grid-cell">
+    
+    <div class="product_grid-cell-inner {{ post.data.status }}">
+    	<a class="img_wrapper" href="{{ post.url | url }}">
+    		<img class="image" src="{{ post.data.image_1 }}" alt="">
+    	</a>
+    	
+    	<a class="title" href="{{ post.url | url }}" >
+    		<h2>{{ post.data.title }}</h2>
+    	</a>
+    	<p class="blurb">{{ post.data.blurb }}</p>
+
+    	<a href="{{ post.url | url }}" class="link ">
+            <span>INFO</span>
+        </a>
+    </div>
+    
+  </li>
+  
+{% endfor %}
+
+</ul>
