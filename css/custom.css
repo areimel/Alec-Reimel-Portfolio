@@ -1,226 +1,223 @@
-/***** Box-Size Reset *****/
-html {
-  box-sizing: border-box;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-/***** Fonts *****/
-@font-face {
-  font-family: 'Computerfont';
-  src: url("/css/fonts/Computerfont.woff2") format('woff2'), url("/css/fonts/Computerfont.woff") format('woff'), url("/css/fonts/Computerfont.ttf") format('truetype');
-  font-weight: 100;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Nasa';
-  src: url("/css/fonts/NasalizationRg-Regular.woff2") format('woff2'), url("/css/fonts/NasalizationRg-Regular.woff") format('woff'), url("/css/fonts/NasalizationRg-Regular.ttf") format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'CMD';
-  src: url("/css/fonts/Windows-Command-Prompt.woff2") format('woff2'), url("/css/fonts/Windows-Command-Prompt.woff") format('woff'), url("/css/fonts/Windows-Command-Prompt.ttf") format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-/***** Scrollbar *****/
-::-webkit-scrollbar {
-  width: 5px;
-}
-::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 20px #041607;
-}
-::-webkit-scrollbar-thumb {
-  -webkit-box-shadow: inset 0 0 50px #11581e;
-}
-::-webkit-scrollbar-thumb:hover {
-  -webkit-box-shadow: inset 0 0 50px #fff;
-}
-:root {
-  font-size: 15px;
-}
-html {
-  min-height: 100%;
-  font-size: 2.4rem;
-  line-height: 1.2;
-  letter-spacing: 1.2px;
-}
-body {
-  box-sizing: border-box;
-  height: 100%;
-  background-color: #000;
-  background-image: radial-gradient(#11581e, #041607), url("/css/images/terminal-static-animated.gif");
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-family: CMD, Helvetica, sans-serif;
-  font-size: 1.5rem;
-  color: rgba(128,255,128,0.8);
-  text-shadow: 0 0 1ex #3f3, 0 0 2px rgba(255,255,255,0.8);
-}
-.noise {
-  pointer-events: none;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: url("/css/images/terminal-static-animated.gif");
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -1;
-  opacity: 0.02;
-}
-.overlay {
-  pointer-events: none;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: repeating-linear-gradient(180deg, rgba(0,0,0,0) 0, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 100%);
-  background-size: auto 4px;
-  z-index: 1;
-}
-.overlay::before {
-  content: "";
-  pointer-events: none;
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(0deg, transparent 0%, rgba(32,128,32,0.2) 2%, rgba(32,128,32,0.8) 3%, rgba(32,128,32,0.2) 3%, transparent 100%);
-  background-repeat: no-repeat;
-  -webkit-animation: scan 7.5s linear 0s infinite;
-  animation: scan 7.5s linear 0s infinite;
-}
-@-webkit-keyframes scan {
-  0% {
-    background-position: 0 -100vh;
-  }
-  35%, 100% {
-    background-position: 0 100vh;
-  }
-}
-.terminal {
-  display: block;
-  box-sizing: inherit;
-  height: 100%;
-  width: 100%;
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 35px 15px;
-  text-transform: uppercase;
-  overflow-y: auto;
-}
-/*
-.input {
-  color: rgba(192, 255, 192, 0.8);
-  text-shadow:
-      0 0 1px rgba(51, 255, 51, 0.4),
-      0 0 2px rgba(255, 255, 255, 0.8);
-}
 
-.input::before {
-  content: "$ ";
-}
-*/
-a {
-  color: #fff;
-  text-decoration: none;
-  padding: 5px;
-}
-a:hover,
-a:focus {
-  color: #11581e;
-  background-color: #fff;
-}
-a::before {
-  content: "[ ";
-}
-a::after {
-  content: " ]";
-}
-.heading {
-  font-family: 'Computerfont';
-  font-size: 2.4rem;
-  display: inline-block;
-  padding: 10px 35px;
-  border: dashed 5px rgba(128,255,128,0.8);
-  margin-bottom: 50px;
-}
-.heading .highlight {
-  color: #fff;
-}
-@media only screen and (max-width: 900px) {
+
+/***** Box-Size Reset *****/
+  html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+
+
+/***** Fonts *****/
+  @font-face {
+    font-family: 'Computerfont';
+    src: url("/css/fonts/Computerfont.woff2") format('woff2'), url("/css/fonts/Computerfont.woff") format('woff'), url("/css/fonts/Computerfont.ttf") format('truetype');
+    font-weight: 100;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Nasa';
+    src: url("/css/fonts/NasalizationRg-Regular.woff2") format('woff2'), url("/css/fonts/NasalizationRg-Regular.woff") format('woff'), url("/css/fonts/NasalizationRg-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'CMD';
+    src: url("/css/fonts/Windows-Command-Prompt.woff2") format('woff2'), url("/css/fonts/Windows-Command-Prompt.woff") format('woff'), url("/css/fonts/Windows-Command-Prompt.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+
+/***** Scrollbar *****/
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 20px #041607;
+  }
+  ::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 50px #11581e;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    -webkit-box-shadow: inset 0 0 50px #fff;
+  }
+
+
+
+/***** General/Global *****/
+  :root {
+    font-size: 15px;
+  }
+  html {
+    min-height: 100%;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    letter-spacing: 1.2px;
+  }
+  body {
+    box-sizing: border-box;
+    height: 100%;
+    background-color: #000;
+    background-image: radial-gradient(#11581e, #041607), url("/css/images/terminal-static-animated.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: CMD, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: rgba(128,255,128,0.8);
+    text-shadow: 0 0 1ex #3f3, 0 0 2px rgba(255,255,255,0.8);
+  }
+
+
+
+
+/***** Terminal Effects *****/
+
+  @keyframes scan {
+    0% {
+      background-position: 0 -100vh;
+    }
+    35%, 100% {
+      background-position: 0 100vh;
+    }
+  }
+
+
+  .noise {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("/css/images/terminal-static-animated.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 100;
+    opacity: 0.02;
+  }
+
+  .overlay {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(180deg, rgba(0,0,0,0) 0, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 100%);
+    background-size: auto 4px;
+    z-index: 101;
+  }
+  .overlay::before {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(0deg, transparent 0%, rgba(32,128,32,0.2) 2%, rgba(32,128,32,0.8) 3%, rgba(32,128,32,0.2) 3%, transparent 100%);
+    background-repeat: no-repeat;
+    -webkit-animation: scan 7.5s linear 0s infinite;
+    animation: scan 7.5s linear 0s infinite;
+  }
+
+  .terminal {
+    display: block;
+    box-sizing: inherit;
+    height: 100vh;
+    width: 100%;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 35px 15px;
+    text-transform: uppercase;
+    overflow-y: auto;
+  }
+
+
+
+/***** Links *****/
+  a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+  }
+  a:hover,
+  a:focus {
+    color: #11581e;
+    background-color: #fff;
+  }
+  a::before {
+    content: "[ ";
+  }
+  a::after {
+    content: " ]";
+  }
+
+
+
+/***** Heading *****/
   .heading {
     font-family: 'Computerfont';
-    font-size: 1.8rem;
-    padding: 10px 15px;
-    border: dashed 3px rgba(128,255,128,0.8);
+    font-size: 2.4rem;
+    display: inline-block;
+    padding: 35px 35px 10px;
+    border: dashed 5px rgba(128,255,128,0.8);
+    margin-bottom: 50px;
+  }
+  .heading li{
+    margin-bottom: 15px;
   }
   .heading .highlight {
-    display: block;
+    color: #fff;
   }
-}
-.output {
-  font-family: 'cmd';
-  font-size: 1.8rem;
-  color: rgba(128,255,128,0.8);
-  text-shadow: 0 0 1px rgba(51,255,51,0.4), 0 0 2px rgba(255,255,255,0.8);
-  padding: 10px 5px;
-}
-.output ul {
-  padding-left: 20px;
-}
-.output li {
-  list-style: none;
-  margin: 10px 0;
-}
-.output li::before {
-  content: "> ";
-}
-@media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 900px) {
+    .heading {
+      font-family: 'Computerfont';
+      font-size: 1.8rem;
+      padding: 10px 15px;
+      border: dashed 3px rgba(128,255,128,0.8);
+    }
+    .heading .highlight {
+      display: block;
+    }
+  }
+
+
+
+/***** Body *****/
   .output {
-    font-size: 1.4rem;
-  }
-  .output li a {
+    font-family: 'cmd';
     font-size: 1.8rem;
-    display: block;
+    color: rgba(128,255,128,0.8);
+    text-shadow: 0 0 1px rgba(51,255,51,0.4), 0 0 2px rgba(255,255,255,0.8);
+    padding: 10px 5px;
   }
-}
-@-moz-keyframes scan {
-  0% {
-    background-position: 0 -100vh;
+  .output ul {
+    padding-left: 20px;
   }
-  35%, 100% {
-    background-position: 0 100vh;
+  .output li {
+    list-style: none;
+    margin: 10px 0;
   }
-}
-@-webkit-keyframes scan {
-  0% {
-    background-position: 0 -100vh;
+  .output li::before {
+    content: "> ";
   }
-  35%, 100% {
-    background-position: 0 100vh;
+
+
+  @media only screen and (max-width: 900px) {
+    .output {
+      font-size: 1.4rem;
+    }
+    .output li a {
+      font-size: 1.8rem;
+      display: block;
+    }
   }
-}
-@-o-keyframes scan {
-  0% {
-    background-position: 0 -100vh;
-  }
-  35%, 100% {
-    background-position: 0 100vh;
-  }
-}
-@keyframes scan {
-  0% {
-    background-position: 0 -100vh;
-  }
-  35%, 100% {
-    background-position: 0 100vh;
-  }
-}
+
+
