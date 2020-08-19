@@ -1,18 +1,19 @@
 $(document).ready(function() {
 
-/********************************************
+	/********************************************
 
-GA AUTO-TAGGER
+	GA AUTO-TAGGER
 
-********************************************/
-  
-  /***** BODY *****/
-    var category  = "General";
-    var action    = "Click";
-    var value   = "NULL";
+	********************************************/
 
-    $('body a').autotagger(category, action, value);
-  
-  /***** INITIALIZE *****/
-    $('html').eventfire_init();
+	/***** BODY *****/
+		var category  = "General";
+		var action    = "Click";
+		var value   = "NULL";
+
+		$('body a').autotagger(category, action, value);
+
+	/***** INITIALIZE *****/
+		$('html').eventfire_init();
+		
 });
