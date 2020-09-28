@@ -148,6 +148,7 @@
 		color: #fff;
 		text-decoration: none;
 		padding: 5px;
+		transition: .01s;
 	}
 	a:hover,
 	a:focus {
@@ -164,62 +165,63 @@
 
 
 /***** Heading *****/
-  .heading {
-    font-family: 'Computerfont';
-    font-size: 2.4rem;
-    display: inline-block;
-    padding: 35px 35px 10px;
-    border: dashed 5px rgba(128,255,128,0.8);
-    margin-bottom: 50px;
-  }
-  .heading li{
-    margin-bottom: 15px;
-  }
-  .heading .highlight {
-    color: #fff;
-  }
-  @media only screen and (max-width: 900px) {
-    .heading {
-      font-family: 'Computerfont';
-      font-size: 1.8rem;
-      padding: 10px 15px;
-      border: dashed 3px rgba(128,255,128,0.8);
-    }
-    .heading .highlight {
-      display: block;
-    }
-  }
+	.heading {
+		font-family: 'Computerfont';
+		font-size: 2.4rem;
+		display: inline-block;
+		padding: 35px 35px 10px;
+		border: dashed 5px rgba(128,255,128,0.8);
+		margin-bottom: 50px;
+	}
+	.heading li{
+		margin-bottom: 15px;
+	}
+	.heading .highlight {
+		color: #fff;
+	}
+
+	@media only screen and (max-width: 900px) {
+	.heading {
+			font-family: 'Computerfont';
+			font-size: 1.8rem;
+			padding: 10px 15px;
+			border: dashed 3px rgba(128,255,128,0.8);
+		}
+		.heading .highlight {
+			display: block;
+		}
+	}
 
 
 
 /***** Body *****/
-  .output {
-    font-family: 'cmd';
-    font-size: 1.8rem;
-    color: rgba(128,255,128,0.8);
-    text-shadow: 0 0 1px rgba(51,255,51,0.4), 0 0 2px rgba(255,255,255,0.8);
-    padding: 10px 5px;
-  }
-  .output ul {
-    padding-left: 20px;
-  }
-  .output li {
-    list-style: none;
-    margin: 10px 0;
-  }
-  .output li::before {
-    content: "> ";
-  }
+	.output {
+		font-family: 'cmd';
+		font-size: 1.8rem;
+		color: rgba(128,255,128,0.8);
+		text-shadow: 0 0 1px rgba(51,255,51,0.4), 0 0 2px rgba(255,255,255,0.8);
+		padding: 10px 5px;
+	}
+	.output ul {
+		padding-left: 20px;
+	}
+	.output li {
+		list-style: none;
+		margin: 10px 0;
+	}
+	.output li::before {
+		content: "> ";
+	}
 
 
-  @media only screen and (max-width: 900px) {
-    .output {
-      font-size: 1.4rem;
-    }
-    .output li a {
-      font-size: 1.8rem;
-      display: block;
-    }
-  }
+	@media only screen and (max-width: 900px) {
+		.output {
+			font-size: 1.4rem;
+		}
+		.output li a {
+			font-size: 1.8rem;
+			display: block;
+		}
+	}
 
 
