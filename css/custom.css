@@ -179,9 +179,12 @@
 	.heading .highlight {
 		color: #fff;
 	}
+	.heading .highlight.small{
+		font-size: 0.75em;
+	}
 
 	@media only screen and (max-width: 900px) {
-	.heading {
+		.heading {
 			font-family: 'Computerfont';
 			font-size: 1.8rem;
 			padding: 10px 15px;
