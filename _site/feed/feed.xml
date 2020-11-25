@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>Alec Reimel | Portfolio</title>
+	<subtitle>Frontend Web Developer</subtitle>
+	
+	<link href="https://alecreimel.com/feed/feed.xml" rel="self"/>
+	<link href="https://alecreimel.com/"/>
+	<updated>2020-05-04T20:00:00-04:00</updated>
+	<id>https://alecreimel.com/</id>
+	<author>
+		<name>Alec Reimel</name>
+		<email>alecreimel1@gmail.com</email>
+	</author>
+	
+	<entry>
+		<title>test</title>
+		<link href="https://alecreimel.com/posts/test/"/>
+		<updated>2020-04-01T20:00:00-04:00</updated>
+		<id>https://alecreimel.com/posts/test/</id>
+		<content type="html"></content>
+	</entry>
+	
+	<entry>
+		<title>Logo T-Shirt</title>
+		<link href="https://alecreimel.com/posts/logo-tee/"/>
+		<updated>2020-05-04T20:00:00-04:00</updated>
+		<id>https://alecreimel.com/posts/logo-tee/</id>
+		<content type="html">&lt;p&gt;Basic logo tee - choose from a variety of colors and shirt types through our Redbubble account.&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;Sales from this shirt will go directly towards: a new printer for making pedal graphics.&lt;/p&gt;
+</content>
+	</entry>
+</feed>
