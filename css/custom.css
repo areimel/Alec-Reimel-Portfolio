@@ -159,6 +159,17 @@
 		bottom:  15px;
 		left:  50px;
 	}
+	.overlay .overlayText{
+		position:  absolute;
+		bottom:  40px;
+		left:  120px;
+		padding:  5px 15px;
+		font-size: 1vw;
+		line-height: 1;
+		color: #fff;
+		background-color: #11581e;
+		color: rgba(128,255,128,0.8);
+	}
 
 	.terminal {
 		display: block;
@@ -300,6 +311,7 @@
 	}
 
 /***** Hover Twitch *****/
+/*https://codepen.io/patrickhlauke/pen/YaoBop*/
 	.hoverTwitch{position: relative;}
 	.hoverTwitch:hover{
 		animation-duration: 0.01s;

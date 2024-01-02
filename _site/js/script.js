@@ -29,3 +29,7 @@ NOTES:
 	/***** URL PARAMETER TAGS *****/
 		$('html').url_param_tag();
 });
+
+$(window).load(function() {
+	$(".loader").delay(3000).fadeOut("fast");
+});
